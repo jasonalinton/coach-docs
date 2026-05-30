@@ -31,29 +31,93 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Domains',
+          text: 'Cross-Cutting Concepts',
           items: [
-            { text: 'Overview', link: '/front-end/domains/' },
-            { text: 'Planner', link: '/front-end/domains/planner/' },
-            { text: 'Metrics', link: '/front-end/domains/metrics/' },
-            { text: 'Goals', link: '/front-end/domains/goals/' },
+            { text: 'Overview', link: '/front-end/concepts/' },
+            { text: 'Goals & Skills', link: '/front-end/concepts/goals-and-skills' },
+            { text: 'Planner & Timeframes', link: '/front-end/concepts/planner-and-timeframes' },
+            { text: 'Metrics', link: '/front-end/concepts/metrics' },
           ]
         },
         {
-          text: 'Features',
+          text: 'Domains',
           items: [
-            { text: 'Overview', link: '/front-end/features/' },
-            { text: 'Daily Planner', link: '/front-end/features/daily-planner' },
-            { text: 'Goals', link: '/front-end/features/goals' },
-            { text: 'Battery', link: '/front-end/features/battery' },
+            { text: 'Overview', link: '/front-end/domains/' },
+          ]
+        },
+        {
+          text: 'Physical',
+          items: [
+            { text: 'Overview', link: '/front-end/domains/physical/' },
+            {
+              text: 'Fitness',
+              items: [
+                { text: 'Overview', link: '/front-end/domains/physical/fitness/' },
+                {
+                  text: 'Entities',
+                  items: [
+                    { text: 'Overview', link: '/front-end/domains/physical/fitness/entities/' },
+                    { text: 'Workout', link: '/front-end/domains/physical/fitness/entities/workout' },
+                    { text: 'Workout Sections', link: '/front-end/domains/physical/fitness/entities/workout-sections' },
+                    { text: 'Exercise', link: '/front-end/domains/physical/fitness/entities/exercise' },
+                    { text: 'Exercise Variations', link: '/front-end/domains/physical/fitness/entities/exercise-variations' },
+                    { text: 'Sets', link: '/front-end/domains/physical/fitness/entities/sets' },
+                    { text: 'Muscles', link: '/front-end/domains/physical/fitness/entities/muscles' },
+                    { text: 'Mesocycle', link: '/front-end/domains/physical/fitness/entities/mesocycle' },
+                  ]
+                },
+                {
+                  text: 'Features',
+                  items: [
+                    { text: 'Overview', link: '/front-end/domains/physical/fitness/features/' },
+                    { text: 'Workout Dashboard', link: '/front-end/domains/physical/fitness/features/workout-dashboard' },
+                    { text: 'Active Workout', link: '/front-end/domains/physical/fitness/features/active-workout' },
+                    { text: 'Workout Planning', link: '/front-end/domains/physical/fitness/features/workout-planning' },
+                    { text: 'Workout Briefing', link: '/front-end/domains/physical/fitness/features/workout-briefing' },
+                    { text: 'Workout History', link: '/front-end/domains/physical/fitness/features/workout-history' },
+                    { text: 'Fitness Goals', link: '/front-end/domains/physical/fitness/features/fitness-goals' },
+                    { text: 'Volume Tracking', link: '/front-end/domains/physical/fitness/features/volume-tracking' },
+                    { text: 'Muscle Heat Map', link: '/front-end/domains/physical/fitness/features/muscle-heat-map' },
+                  ]
+                },
+                {
+                  text: 'Components',
+                  items: [
+                    { text: 'Overview', link: '/front-end/domains/physical/fitness/components/' },
+                  ]
+                },
+              ]
+            },
+          ]
+        },
+        {
+          text: 'Mental',
+          items: [
+            { text: 'Overview', link: '/front-end/domains/mental/' },
+          ]
+        },
+        {
+          text: 'Social',
+          items: [
+            { text: 'Overview', link: '/front-end/domains/social/' },
+          ]
+        },
+        {
+          text: 'Emotional & Spiritual',
+          items: [
+            { text: 'Overview', link: '/front-end/domains/emotional-spiritual/' },
+          ]
+        },
+        {
+          text: 'Financial',
+          items: [
+            { text: 'Overview', link: '/front-end/domains/financial/' },
           ]
         },
         {
           text: 'Components',
           items: [
             { text: 'Overview', link: '/front-end/components/' },
-            { text: 'Planner', link: '/front-end/components/planner' },
-            { text: 'Todo Item Panel', link: '/front-end/components/todo-item-panel' },
           ]
         },
       ],
@@ -102,7 +166,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/jasonalinton' }
+      { icon: 'github', link: 'https://github.com/jasonalinton/coach-docs' }
     ],
 
     search: {
