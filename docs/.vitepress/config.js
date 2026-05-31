@@ -64,6 +64,7 @@ export default defineConfig({
                     { text: 'Sets', link: '/front-end/domains/physical/fitness/entities/sets' },
                     { text: 'Muscles', link: '/front-end/domains/physical/fitness/entities/muscles' },
                     { text: 'Mesocycle', link: '/front-end/domains/physical/fitness/entities/mesocycle' },
+                    { text: 'Fitness Goal', link: '/front-end/domains/physical/fitness/entities/fitness-goal' },
                   ]
                 },
                 {
@@ -76,6 +77,7 @@ export default defineConfig({
                     { text: 'Workout Briefing', link: '/front-end/domains/physical/fitness/features/workout-briefing' },
                     { text: 'Workout History', link: '/front-end/domains/physical/fitness/features/workout-history' },
                     { text: 'Fitness Goals', link: '/front-end/domains/physical/fitness/features/fitness-goals' },
+                    { text: 'Mesocycle', link: '/front-end/domains/physical/fitness/features/mesocycle' },
                     { text: 'Volume Tracking', link: '/front-end/domains/physical/fitness/features/volume-tracking' },
                     { text: 'Muscle Heat Map', link: '/front-end/domains/physical/fitness/features/muscle-heat-map' },
                   ]
