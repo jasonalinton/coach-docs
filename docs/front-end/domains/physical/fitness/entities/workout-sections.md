@@ -12,13 +12,24 @@ A Workout Section is an ordered group of exercises within a Workout. Sections gi
 | `isTemplate` | Boolean | Marks the section as reusable across workouts |
 | `workoutId` | Integer | The workout this section belongs to |
 
+## WorkoutSection_Exercise Properties
+
+Each exercise added to a section is tracked via a `WorkoutSection_Exercise` mapping record with its own properties:
+
+| Property | Type | Description |
+|---|---|---|
+| `circuit` | Integer | The circuit (superset) this exercise belongs to within the section |
+| `position` | Integer | The position of this exercise within its circuit |
+
+A **circuit** is a group of exercises performed back-to-back before resting — equivalent to a superset. Exercises in the same circuit share the same `circuit` value and are ordered by `position`.
+
 ## Relationships
 
 ```
 Workout_Section
-├── Workout (1)              → The parent workout
-├── Workout_Exercise[]       → Ordered exercises within the section
-└── Todo (0..1)              → Optional mapping to a Planner todo
+├── Workout (1)                  → The parent workout
+├── WorkoutSection_Exercise[]    → Ordered exercises within the section, each with circuit and position
+└── Todo (0..1)                  → Optional mapping to a Planner todo
 ```
 
 ## Section Types

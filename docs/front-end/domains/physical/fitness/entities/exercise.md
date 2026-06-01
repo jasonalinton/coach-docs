@@ -10,7 +10,9 @@ An Exercise is a global movement pattern that lives in a shared library and can 
 | `name` | String | Name of the exercise (e.g. "Pull-up") |
 | `description` | String | Description of the movement |
 | `type` | Enum | The exercise category (see Exercise Types below) |
-| `tempo` | String | Default tempo for the movement (e.g. "3-1-2-0") |
+| `tempo4Digit` | String | Default tempo as a 4-digit code (e.g. "3-1-2-0") |
+| `tempoContractRelax` | String | Default tempo expressed as Contract/Relax |
+| `tempoBPM` | Integer | Default tempo expressed as Beats Per Minute |
 
 ## Exercise Types
 
@@ -38,6 +40,33 @@ Reps, weight, rest time, and tempo can have default values that change depending
 | **Endurance** | Higher (e.g. 15–20+) | Shorter (e.g. 30–45 sec) |
 
 Tempo is the only property with a true fixed default at the exercise level. All other defaults are attribute-based.
+
+## Tempo
+
+Tempo defines the speed at which each rep of an exercise is performed. There are three ways to express tempo, used in priority order:
+
+| Priority | Type | Description | Example |
+|---|---|---|---|
+| 1 | **4-Digit Code** | Eccentric – Pause – Concentric – Pause | `3-1-2-0` |
+| 2 | **Contract/Relax** | Alternating contraction and relaxation timing | — |
+| 3 | **BPM** | Beats Per Minute, synced to a rhythm | `60 BPM` |
+
+The first available tempo type is used. If all tempo fields are null, the app falls back to a default tempo of **`1111`**.
+
+Tempo is most commonly set at the exercise level as a default, but can be overridden at the set level.
+
+## Exercise-Variation Equivalence
+
+It is possible for a standalone Exercise to be equivalent to an Exercise+Variation combination. For example:
+
+- Exercise **"Push Up"** with variation **"Close Grip"**
+- Exercise **"Close Grip Push Up"** (no variation)
+
+These represent the same movement. The app handles this by allowing exercises to be **mapped together** as equivalents. This ensures data is not siloed when performing history analysis, volume tracking, planning, and goal tracking.
+
+Equivalence mappings can be:
+- **Suggested automatically** by the app when it detects a likely match
+- **Created manually** by the user
 
 ## Relationships
 
