@@ -71,6 +71,7 @@ export default defineConfig({
                   text: 'Features',
                   items: [
                     { text: 'Overview', link: '/front-end/domains/physical/fitness/features/' },
+                    { text: 'Workout', link: '/front-end/domains/physical/fitness/features/workout' },
                     { text: 'Workout Dashboard', link: '/front-end/domains/physical/fitness/features/workout-dashboard' },
                     { text: 'Active Workout', link: '/front-end/domains/physical/fitness/features/active-workout' },
                     { text: 'Workout Planning', link: '/front-end/domains/physical/fitness/features/workout-planning' },
