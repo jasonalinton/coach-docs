@@ -7,7 +7,7 @@ A Set is a single logged or planned instance of an exercise performed within a w
 | Property | Type | Description |
 |---|---|---|
 | `id` | Integer | Primary key |
-| `reps` | Integer | Number of repetitions performed |
+| `reps` | Integer | Number of repetitions performed. Defaults to `1` — every set requires at least one rep |
 | `weight` | Decimal | Weight used |
 | `time` | Duration | Time duration of the set (e.g. for planks, holds) |
 | `tempo4Digit` | String | Tempo as a 4-digit code (e.g. "3-1-2-0") |
