@@ -55,6 +55,25 @@ There is no true standalone set logging. When a set needs to be logged outside o
 A more refined UI for this experience is planned but not yet designed.
 :::
 
+## Exercise History
+
+Each exercise maintains a full history of every set logged across all workouts. From the global library, the history view shows:
+
+| Data | Description |
+|---|---|
+| Reps, weight, time | Per set over time |
+| Volume trends | Total volume across sessions |
+| Variations used | Which variants were logged and when |
+| Workout context | Which workouts this exercise has appeared in |
+
+Charts available:
+- Reps in 1 set
+- Weight in 1 set
+- Time in 1 set
+- Total volume
+
+History is also accessible from within a workout via the [Workout Exercise](/front-end/domains/physical/fitness/features/workout-exercise) toolbar, where it shows the same data but in the context of the current session.
+
 ## Adding an Exercise to a Workout Section
 
 1. Open the exercise list from the section
