@@ -47,6 +47,18 @@ When adding an exercise to a workout or logging a set, the app surfaces recommen
 
 Tempo is the only property with a fixed default set directly on the exercise. All other defaults are attribute-based and can be overridden at the set level.
 
+## Exercise Toolbar
+
+Each exercise in the active workout has a toolbar with:
+
+| Action | Description |
+|---|---|
+| **History** | View past sets for this exercise |
+| **Rest** | Manually start or adjust the rest timer |
+| **Replace** | Swap the exercise for another (based on split type: push/pull, upper/lower, etc.) |
+| **Notes** | Add notes to the exercise |
+| **Units** | Toggle units (e.g. kg / lbs) |
+
 ## Exercise History
 
 Each exercise maintains a history of every set logged across all workouts. From the history view you can see:
