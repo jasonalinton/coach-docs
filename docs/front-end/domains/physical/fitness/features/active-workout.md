@@ -21,7 +21,7 @@ A [Workout Briefing](/front-end/domains/physical/fitness/features/workout-briefi
 ## Exercise Navigation
 
 ### Manual Navigation
-- **Tap an exercise card** to jump to that exercise's detail page
+- **Tap an exercise card** to jump to that exercise's [Workout Exercise](/front-end/domains/physical/fitness/features/workout-exercise) page
 - **Navbar** to go back to the section or workout overview
 
 ### Automatic Navigation
@@ -41,17 +41,6 @@ Section
 └── Circuit 2
     └── Exercise D
 ```
-
-## Logging a Set
-
-Logging a set is a single tap. Values are pre-filled from either:
-- **Attribute-based defaults** set on the exercise
-- **Dynamically determined values** based on previous sets or training history
-
-The user can always adjust any value before or after logging. Sets without values are skipped when using Log All Sets.
-
-### Log All Sets
-Logs all remaining sets in the current exercise at their current pre-filled values. Any set missing a required value is skipped.
 
 ## Rest Timer
 
@@ -89,28 +78,9 @@ From the workout-level context menu:
 - Log rating, energy, mood
 - Delete workout
 
-## Set Property Display
-
-Properties are shown at two levels:
-
-| Level | Behavior |
-|---|---|
-| **Exercise defaults** | Shown when the exercise is first loaded |
-| **Set level** | Properties with values in at least one set are shown across all sets |
-
-The user can toggle which properties are displayed at the workout, exercise, and set level.
-
-## Property Value Priority
-
-When determining the value to display for a set property:
-
-1. Value entered directly in the set component
-2. Existing value on the set record
-3. Default value set on the exercise
-
 ## Related Features
 
 - [Workout](/front-end/domains/physical/fitness/features/workout) — creating and managing workouts
+- [Workout Exercise](/front-end/domains/physical/fitness/features/workout-exercise) — the exercise view within a workout
 - [Workout Briefing](/front-end/domains/physical/fitness/features/workout-briefing) — pre-workout and mesocycle-start summary
 - [Workout History](/front-end/domains/physical/fitness/features/workout-history) — reviewing past performance
-- [Exercise](/front-end/domains/physical/fitness/features/exercise) — exercise library and defaults

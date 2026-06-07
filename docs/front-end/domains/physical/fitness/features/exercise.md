@@ -25,7 +25,7 @@ When creating an exercise:
 - Set exercise type (Strength, Stretch, Warm-Up, Cool-Down)
 - Set tempo default
 - Add variations
-- Map target muscles and muscle groups
+- Map target muscles and muscle groups (primary and secondary)
 
 ## Managing Variations
 
@@ -37,7 +37,7 @@ Each exercise can have multiple named variations. Variations can be:
 
 ## Attribute-Based Defaults
 
-When adding an exercise to a workout or logging a set, the app surfaces recommended defaults based on the selected training attribute:
+The app surfaces recommended defaults based on the selected training attribute:
 
 | Attribute | Suggested Reps | Suggested Rest |
 |---|---|---|
@@ -47,27 +47,6 @@ When adding an exercise to a workout or logging a set, the app surfaces recommen
 
 Tempo is the only property with a fixed default set directly on the exercise. All other defaults are attribute-based and can be overridden at the set level.
 
-## Exercise Toolbar
-
-Each exercise in the active workout has a toolbar with:
-
-| Action | Description |
-|---|---|
-| **History** | View past sets for this exercise |
-| **Rest** | Manually start or adjust the rest timer |
-| **Replace** | Swap the exercise for another (based on split type: push/pull, upper/lower, etc.) |
-| **Notes** | Add notes to the exercise |
-| **Units** | Toggle units (e.g. kg / lbs) |
-
-## Exercise History
-
-Each exercise maintains a history of every set logged across all workouts. From the history view you can see:
-
-- Reps, weight, and time per set over time
-- Volume trends
-- Which variations were used
-- Which workouts the exercise appeared in
-
 ## Standalone Sets
 
 ::: info Current Behavior
@@ -76,13 +55,12 @@ There is no true standalone set logging. When a set needs to be logged outside o
 A more refined UI for this experience is planned but not yet designed.
 :::
 
-## Workout Section Integration
+## Adding an Exercise to a Workout Section
 
-When adding an exercise to a workout section:
 1. Open the exercise list from the section
 2. Search or browse for the exercise
 3. Select and confirm — the exercise is added at the active position or end of the section
-4. Initialize set defaults based on the section's training attribute
+4. Set defaults initialize based on the section's training attribute
 
 ## Data Model
 
@@ -91,14 +69,14 @@ When adding an exercise to a workout section:
 | `type` | Exercise category — also settable at the section level for dynamic suggestions |
 | `tempo` | Fixed default tempo for the movement |
 | `Exercise_Variation[]` | Named variants with their own muscle mappings |
-| `Muscle[]` | Target muscles for the base exercise |
+| `Muscle[]` | Target muscles for the base exercise (primary and secondary) |
 
 → Full entity details: [Exercise Entity](/front-end/domains/physical/fitness/entities/exercise)
 → Variation entity details: [Exercise Variation Entity](/front-end/domains/physical/fitness/entities/exercise-variations)
 
 ## Related Features
 
-- [Active Workout](/front-end/domains/physical/fitness/features/active-workout) — where exercises are performed and sets are logged
+- [Workout Exercise](/front-end/domains/physical/fitness/features/workout-exercise) — an exercise as it appears within a specific workout
 - [Workout Planning](/front-end/domains/physical/fitness/features/workout-planning) — exercises are suggested based on type, attribute, and muscle group
 - [Volume Tracking](/front-end/domains/physical/fitness/features/volume-tracking) — exercise history feeds into volume analysis
 - [Muscle Heat Map](/front-end/domains/physical/fitness/features/muscle-heat-map) — muscle mappings drive the heat map visualization
