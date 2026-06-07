@@ -10,6 +10,7 @@ The Briefing also serves as a fitness journal. You can write blurbs about where 
 - No single place to capture how you're feeling before and after a workout
 - Hard to explain or contextualize incomplete workouts or breakthroughs after the fact
 - Progress isn't always visible in the numbers — sometimes it lives in how you felt
+- Maintenance goals and structural imbalances go unnoticed without a dedicated place to surface warnings
 
 ## When It's Shown
 
@@ -28,6 +29,7 @@ Includes:
 - Active goals and skills for the current mesocycle
 - Priority breakdown of which goals and exercises matter most right now
 - Planned vs unplanned items for the current timeframe
+- **Maintenance warnings** — alerts when you are approaching or have crossed below the volume/frequency threshold for a Maintenance goal. See [Fitness Goals](/front-end/domains/physical/fitness/features/fitness-goals) for details.
 
 ### Mesocycle Summary
 Where you are in the current training block:
