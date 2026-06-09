@@ -82,7 +82,7 @@ export default defineConfig({
                     { text: 'Active Workout', link: '/front-end/domains/physical/fitness/features/active-workout' },
                     { text: 'Workout Planning *', link: '/front-end/domains/physical/fitness/features/workout-planning' },
                     { text: 'Workout Briefing', link: '/front-end/domains/physical/fitness/features/workout-briefing' },
-                    { text: 'Workout History *', link: '/front-end/domains/physical/fitness/features/workout-history' },
+                    { text: 'Exercise History', link: '/front-end/domains/physical/fitness/features/exercise-history' },
                     { text: 'Fitness Goals', link: '/front-end/domains/physical/fitness/features/fitness-goals' },
                     { text: 'Volume Tracking *', link: '/front-end/domains/physical/fitness/features/volume-tracking' },
                     { text: 'Muscle Heat Map *', link: '/front-end/domains/physical/fitness/features/muscle-heat-map' },

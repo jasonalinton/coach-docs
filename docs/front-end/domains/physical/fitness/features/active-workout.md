@@ -83,4 +83,4 @@ From the workout-level context menu:
 - [Workout](/front-end/domains/physical/fitness/features/workout) — creating and managing workouts
 - [Workout Exercise](/front-end/domains/physical/fitness/features/workout-exercise) — the exercise view within a workout
 - [Workout Briefing](/front-end/domains/physical/fitness/features/workout-briefing) — pre-workout and mesocycle-start summary
-- [Workout History](/front-end/domains/physical/fitness/features/workout-history) — reviewing past performance
+- [Exercise History](/front-end/domains/physical/fitness/features/exercise-history) — reviewing past performance

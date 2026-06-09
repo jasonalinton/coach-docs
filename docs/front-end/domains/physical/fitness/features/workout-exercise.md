@@ -92,4 +92,4 @@ The Workout Exercise maps to the `WorkoutSection_Exercise` record:
 
 - [Exercise](/front-end/domains/physical/fitness/features/exercise) — the global exercise library
 - [Active Workout](/front-end/domains/physical/fitness/features/active-workout) — the workout context this exercise lives in
-- [Exercise History](/front-end/domains/physical/fitness/features/workout-history) — broader workout history and volume analysis
+- [Exercise History](/front-end/domains/physical/fitness/features/exercise-history) — full exercise history and volume analysis
