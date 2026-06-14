@@ -22,10 +22,15 @@ Type is set on the Exercise but can also be set at the Workout Section level, wh
 |---|---|
 | **Strength** | Resistance-based movements |
 | **Stretch** | Static or dynamic stretching |
+| **Alignment** | Static or dynamic stretching |
 | **Warm-Up** | Preparatory movements before training |
 | **Cool-Down** | Recovery movements after training |
 
 ::: info
+Is stretch a type? Should it be mobility?
+I don't think Warm-Up and Cool-Down are actually exercise types. They're just the part of the workout.
+Nvm, yes it is. It's a type that helps it find it's way to the section
+
 Additional types may be added as the domain evolves.
 :::
 

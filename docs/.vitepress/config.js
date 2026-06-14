@@ -80,7 +80,7 @@ export default defineConfig({
                     { text: 'Workout Exercise', link: '/front-end/domains/physical/fitness/features/workout-exercise' },
                     { text: 'Workout Dashboard', link: '/front-end/domains/physical/fitness/features/workout-dashboard' },
                     { text: 'Active Workout', link: '/front-end/domains/physical/fitness/features/active-workout' },
-                    { text: 'Workout Planning *', link: '/front-end/domains/physical/fitness/features/workout-planning' },
+                    { text: 'Workout Planning', link: '/front-end/domains/physical/fitness/features/workout-planning' },
                     { text: 'Workout Briefing', link: '/front-end/domains/physical/fitness/features/workout-briefing' },
                     { text: 'Exercise History', link: '/front-end/domains/physical/fitness/features/exercise-history' },
                     { text: 'Fitness Goals', link: '/front-end/domains/physical/fitness/features/fitness-goals' },
