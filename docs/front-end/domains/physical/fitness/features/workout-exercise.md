@@ -6,9 +6,10 @@ This is analogous to the relationship between [Workout](/front-end/domains/physi
 
 ## Pain Points Solved
 
-- When performing an exercise you need context-specific information — past performance, rest, notes — without leaving the workout
+- When performing an exercise you need context-specific information — past performance, rest, notes, and how to perform it — without leaving the workout
 - Set values and properties need to be manageable at the exercise level, not just globally
 - Replacing an exercise mid-workout should be intelligent, not a manual search
+- Easy to forget proper form or technique mid-workout, especially for less familiar exercises
 
 ## Toolbar
 
@@ -90,6 +91,28 @@ When determining the value to show for a set property:
 1. Value entered directly in the set component
 2. Existing value on the set record
 3. Default value set on the exercise
+
+## Exercise Info & Demonstration
+
+Each Workout Exercise has an Info section providing reference material for performing the movement correctly during a workout.
+
+### Demonstration Media
+A visual demonstration of the exercise is shown as an image, GIF, or embedded video. Media can be:
+
+- **Manually attached** when creating the exercise in the library
+- **Pulled from the internet** — the app searches for relevant media and presents options for the user to choose from
+- **Auto-selected** if the user skips the selection step — the app picks the most appropriate result
+
+### Info Panel Contents
+| Field | Description |
+|---|---|
+| **Demonstration** | Image, GIF, or embedded video showing proper form |
+| **Target Muscles** | Primary and secondary muscles worked, with body diagram |
+| **Equipment** | What equipment is required for this exercise |
+| **Description** | Movement description and cues |
+
+### Equipment & Planning
+Equipment is not just informational — it factors into [Workout Planning](/front-end/domains/physical/fitness/features/workout-planning). The user can specify what equipment they have access to (by specific item or by category), and the planning algorithm will only suggest exercises that match the available equipment.
 
 ## Exercise History
 
