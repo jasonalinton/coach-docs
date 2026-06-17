@@ -33,6 +33,14 @@ Domain
 - Data Model section (lightweight summary, links to full entity page)
 - Related Features section
 
+**Feature pages describe what users can do and why — not how the UI is built.** Avoid specifying layout positions, field labels, button placement, or component-level implementation details. Those belong in component pages.
+
+### Component Pages
+- Which feature(s) the component implements
+- Props, emits, and store dependencies
+- UI structure and layout decisions
+- Implementation notes (e.g. state management, edge cases)
+
 ### Planned vs Current Behavior
 Use VitePress callout blocks to distinguish:
 - `::: info Planned` — for behavior that is designed but not yet implemented
@@ -53,6 +61,10 @@ These live under `front-end/concepts/` and are referenced across domains:
 - Goals & Skills
 - Planner & Timeframes
 - Metrics
+
+## Brainstorming & Documentation Process
+
+When the user provides brainstorming notes before writing a page, do a **thorough pass through all the notes** before asking clarifying questions. Don't rely only on what comes to mind — scan every bullet and sub-bullet to make sure nothing is missed. Ask about anything that isn't fully understood, even if it seems minor. Missing details discovered after a page is written require rework.
 
 ## Commit Style
 

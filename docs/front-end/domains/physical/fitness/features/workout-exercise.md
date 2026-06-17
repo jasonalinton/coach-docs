@@ -12,7 +12,7 @@ This is analogous to the relationship between [Workout](/front-end/domains/physi
 
 ## Toolbar
 
-Each Workout Exercise has a toolbar for in-workout actions:
+Each Workout Exercise has a toolbar for quick in-workout actions:
 
 | Action | Description |
 |---|---|
@@ -21,6 +21,39 @@ Each Workout Exercise has a toolbar for in-workout actions:
 | **Replace** | Swap for another exercise based on split type (push/pull, upper/lower, straight-arm/bent-arm, etc.) |
 | **Notes** | Add notes specific to this exercise in this workout |
 | **Units** | Toggle units (e.g. kg / lbs) |
+| **More** | Access exercise-level settings (tempo, rest, circuit placement) |
+
+## Exercise Settings
+
+Each workout exercise has configurable settings for movement tempo, rest duration, and circuit placement. Settings are accessed on demand and support Cancel/Done editing — changes are not committed until explicitly saved.
+
+## Tempo
+
+Tempo defines the speed and rhythm of each movement phase. Three tempo types are supported:
+
+| Type | Format | Description |
+|---|---|---|
+| **4-Digit** | `3 - 1 - 2 - 1` | Eccentric – Bottom Iso – Concentric – Top Iso (seconds) |
+| **Contract-Relax** | `3 - 2` | Contract hold – Relax (seconds) |
+| **BPM** | `120` | Beats per minute |
+
+### Tempo Countdown
+
+When a tempo is set, a **▶ play button** runs an animated countdown through each phase:
+
+- Each phase counts down to **0**, then the next starts immediately
+- The number of **loops** matches the **reps** of the active set (defaults to 1)
+- When all loops complete, the set is **automatically logged**
+- Stopping early cancels the countdown without logging
+
+## Rest Timer
+
+When rest is active between sets, a countdown timer shows the remaining rest duration. The user can:
+
+- Adjust the remaining time on the fly (add or subtract seconds)
+- Skip rest entirely to proceed immediately
+
+Rest duration is configured per exercise in the exercise settings.
 
 ## Set Management
 
@@ -83,6 +116,10 @@ The Workout Exercise maps to the `WorkoutSection_Exercise` record:
 |---|---|
 | `circuit` | The circuit (superset) this exercise belongs to within the section |
 | `position` | Position within the circuit |
+| `tempo_4DigitCode` | 4-digit tempo string e.g. `"3-1-2-1"` (eccentric, bottom iso, concentric, top iso) |
+| `tempo_CR` | Contract-relax tempo string e.g. `"3-2"` |
+| `tempo_bpm` | BPM tempo value |
+| `restSeconds` | Rest duration in seconds between sets |
 | `Set[]` | The sets logged or planned for this exercise instance |
 
 → Full entity details: [Workout Section Entity](/front-end/domains/physical/fitness/entities/workout-sections)
