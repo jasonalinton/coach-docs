@@ -62,6 +62,16 @@ These live under `front-end/concepts/` and are referenced across domains:
 - Planner & Timeframes
 - Metrics
 
+## Developer Collaboration (Not Yet Started)
+
+The user is a senior developer who wants full control over implementation details and wants to train Claude to develop in their exact style. When ready, the plan is to:
+
+1. **Read existing code** — Vue components, .NET controllers, services, and data access layer to reverse-engineer patterns
+2. **Read FigJam flow** — a FigJam board covering the full todo flow of the application (share as screenshot or PDF)
+3. **Document patterns in CLAUDE.md** — coding style, naming conventions, state management, component structure, API calls, etc.
+
+Do not start this process until the user explicitly says they are ready.
+
 ## Brainstorming & Documentation Process
 
 When the user provides brainstorming notes before writing a page, do a **thorough pass through all the notes** before asking clarifying questions. Don't rely only on what comes to mind — scan every bullet and sub-bullet to make sure nothing is missed. Ask about anything that isn't fully understood, even if it seems minor. Missing details discovered after a page is written require rework.
