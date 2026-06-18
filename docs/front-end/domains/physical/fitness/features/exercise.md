@@ -7,6 +7,7 @@ The Exercise feature covers the global exercise library — creating and managin
 - Exercises shouldn't have to be recreated every time they appear in a new workout
 - Different training goals (strength vs hypertrophy) require different set parameters — these shouldn't have to be set manually every time
 - Knowing which muscles an exercise targets is essential for planning balanced workouts and avoiding overtraining
+- Proper form and technique should be accessible at the point of need, not buried in a separate reference
 
 ## Exercise Library
 
@@ -26,6 +27,17 @@ When creating an exercise:
 - Set tempo default
 - Add variations
 - Map target muscles and muscle groups (primary and secondary)
+- Set equipment required
+- Attach demonstration media (image, GIF, or embedded video)
+
+### Demonstration Media
+Media can be sourced three ways:
+
+| Method | Description |
+|---|---|
+| **Manual upload** | Attach an image, GIF, or video directly when creating the exercise |
+| **Internet search** | The app searches for relevant media and presents options to choose from |
+| **Auto-selected** | If the user skips selection, the app picks the most appropriate result |
 
 ## Managing Variations
 
@@ -89,6 +101,8 @@ History is also accessible from within a workout via the [Workout Exercise](/fro
 | `tempo` | Fixed default tempo for the movement |
 | `Exercise_Variation[]` | Named variants with their own muscle mappings |
 | `Muscle[]` | Target muscles for the base exercise (primary and secondary) |
+| `equipment` | Equipment required for the exercise — also used by the planning algorithm |
+| `media` | Demonstration image, GIF, or video |
 
 → Full entity details: [Exercise Entity](/front-end/domains/physical/fitness/entities/exercise)
 → Variation entity details: [Exercise Variation Entity](/front-end/domains/physical/fitness/entities/exercise-variations)
