@@ -44,6 +44,7 @@ export default defineConfig({
             { text: 'Goals & Skills *', link: '/front-end/concepts/goals-and-skills' },
             { text: 'Planner & Timeframes *', link: '/front-end/concepts/planner-and-timeframes' },
             { text: 'Metrics *', link: '/front-end/concepts/metrics' },
+            { text: 'Avatar', link: '/front-end/concepts/avatar' },
           ]
         },
         {
@@ -233,7 +234,7 @@ export default defineConfig({
                     { text: 'Exercise History', link: '/front-end/domains/physical/fitness/features/exercise-history' },
                     { text: 'Fitness Goals', link: '/front-end/domains/physical/fitness/features/fitness-goals' },
                     { text: 'Volume Tracking *', link: '/front-end/domains/physical/fitness/features/volume-tracking' },
-                    { text: 'Muscle Heat Map *', link: '/front-end/domains/physical/fitness/features/muscle-heat-map' },
+                    { text: 'Muscle Heat Map', link: '/front-end/domains/physical/fitness/features/muscle-heat-map' },
                   ]
                 },
                 {

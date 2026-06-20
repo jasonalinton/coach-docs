@@ -61,6 +61,7 @@ These live under `front-end/concepts/` and are referenced across domains:
 - Goals & Skills
 - Planner & Timeframes
 - Metrics
+- Avatar — a visual body silhouette that displays the user's state across domains. Each domain contributes its own layer (e.g. Fitness → Muscle Heat Map, Emotional → mood/energy, Physical → injuries/pains). The Muscle Heat Map is the Fitness domain's implementation of Avatar.
 
 ## Developer Collaboration (Not Yet Started)
 
