@@ -77,6 +77,9 @@ Each workout section has its own context menu:
 | **Add Exercise** | Add an exercise to this section |
 | **Edit Order** | Reorder exercises within the section |
 | **Toggle View** | Show or hide the section's exercise list. Sections automatically hide when all their exercises are complete |
+| **Edit Name** | Update the section name |
+| **Edit Type** | Change the section type (Warm-Up, Skill, Strength, Cool-Down, or custom) |
+| **Edit Workout Attributes** | Set the training attributes for this section (Strength, Hypertrophy, Mobility, etc.) — used for volume analysis and dynamic planning |
 
 ## Exercise Auto-Repositioning
 
