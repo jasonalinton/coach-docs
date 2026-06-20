@@ -68,7 +68,21 @@ Quick Log displays:
 - Next / skip set and next / skip exercise controls
 - Rest timer
 
-## Context Menu Actions
+## Section Context Menu
+
+Each workout section has its own context menu:
+
+| Action | Description |
+|---|---|
+| **Add Exercise** | Add an exercise to this section |
+| **Edit Order** | Reorder exercises within the section |
+| **Toggle View** | Show or hide the section's exercise list. Sections automatically hide when all their exercises are complete |
+
+## Exercise Auto-Repositioning
+
+When a set is logged for an exercise for the **first time**, if there are unlogged exercises positioned before it in the section, that exercise automatically moves to the position directly after the last logged exercise. This keeps completed and in-progress exercises grouped together at the top of the list as the workout progresses.
+
+## Workout Context Menu
 
 From the workout-level context menu:
 
