@@ -42,6 +42,23 @@ Section
     └── Exercise D
 ```
 
+### Section Context Menu
+
+Each workout section has its own context menu:
+
+| Action | Description |
+|---|---|
+| **Add Exercise** | Add an exercise to this section |
+| **Edit Name** | Update the section name |
+| **Edit Type** | Change the section type (Warm-Up, Skill, Strength, Cool-Down, or custom) |
+| **Edit Workout Attributes** | Set the training attributes for this section (Strength, Hypertrophy, Mobility, etc.) — used for volume analysis and dynamic planning |
+
+Exercise order is changed by **hold and drag**. Sections are collapsed and expanded by **tapping the section header** — they also automatically collapse when all exercises are complete.
+
+### Exercise Auto-Repositioning
+
+When a set is logged for an exercise for the **first time**, if there are unlogged exercises positioned before it in the section, that exercise automatically moves to the position directly after the last logged exercise. This keeps completed and in-progress exercises grouped together at the top of the list as the workout progresses.
+
 ## Rest Timer
 
 The rest timer starts automatically when a set is logged (default behavior, can be disabled in settings).
@@ -67,23 +84,6 @@ Quick Log displays:
 - Log Set and Log All Sets buttons
 - Next / skip set and next / skip exercise controls
 - Rest timer
-
-## Section Context Menu
-
-Each workout section has its own context menu:
-
-| Action | Description |
-|---|---|
-| **Add Exercise** | Add an exercise to this section |
-| **Edit Order** | Reorder exercises within the section |
-| **Toggle View** | Show or hide the section's exercise list. Sections automatically hide when all their exercises are complete |
-| **Edit Name** | Update the section name |
-| **Edit Type** | Change the section type (Warm-Up, Skill, Strength, Cool-Down, or custom) |
-| **Edit Workout Attributes** | Set the training attributes for this section (Strength, Hypertrophy, Mobility, etc.) — used for volume analysis and dynamic planning |
-
-## Exercise Auto-Repositioning
-
-When a set is logged for an exercise for the **first time**, if there are unlogged exercises positioned before it in the section, that exercise automatically moves to the position directly after the last logged exercise. This keeps completed and in-progress exercises grouped together at the top of the list as the workout progresses.
 
 ## Workout Context Menu
 
