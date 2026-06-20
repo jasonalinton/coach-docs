@@ -1,6 +1,6 @@
 # Muscle Heat Map
 
-The Muscle Heat Map is a visual body diagram that shows the freshness state of every muscle group at a glance. It is used across the Fitness domain to inform workout planning, briefings, and recovery decisions.
+The Muscle Heat Map is the Fitness domain's implementation of the [Avatar](/front-end/concepts/avatar) — a cross-cutting feature that visually represents the user's state across all domains. In the Fitness context, it overlays muscle freshness data onto a body silhouette, giving an at-a-glance picture of recovery and readiness to train.
 
 ## Pain Points Solved
 
@@ -69,6 +69,7 @@ The heat map is used across multiple surfaces in the Fitness domain:
 
 ## Related Features
 
+- [Avatar](/front-end/concepts/avatar) — the cross-cutting concept this feature is a domain implementation of
 - [Muscles Entity](/front-end/domains/physical/fitness/entities/muscles) — muscle and muscle group data, recovery times, freshness calculation
 - [Workout Planning](/front-end/domains/physical/fitness/features/workout-planning) — freshness data used to balance planned workouts
 - [Workout Briefing](/front-end/domains/physical/fitness/features/workout-briefing) — freshness snapshot shown before each session

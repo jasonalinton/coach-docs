@@ -40,6 +40,7 @@ export default defineConfig({
             { text: 'Goals & Skills *', link: '/front-end/concepts/goals-and-skills' },
             { text: 'Planner & Timeframes *', link: '/front-end/concepts/planner-and-timeframes' },
             { text: 'Metrics *', link: '/front-end/concepts/metrics' },
+            { text: 'Avatar', link: '/front-end/concepts/avatar' },
           ]
         },
         {
