@@ -24,6 +24,8 @@ export default defineConfig({
         },
         {
           text: 'Architecture',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/architecture/' },
             { text: 'Component Tree *', link: '/front-end/architecture/component-tree' },
@@ -35,6 +37,8 @@ export default defineConfig({
         },
         {
           text: 'Cross-Cutting Concepts',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/concepts/' },
             { text: 'Goals & Skills *', link: '/front-end/concepts/goals-and-skills' },
@@ -49,15 +53,157 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Planner',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Overview *', link: '/front-end/domains/planner/' },
+            {
+              text: 'Planner',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Overview *', link: '/front-end/domains/planner/planner/' },
+                {
+                  text: 'Entities',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/planner/entities/' },
+                  ]
+                },
+                {
+                  text: 'Features',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/planner/features/' },
+                  ]
+                },
+                {
+                  text: 'Components',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/planner/components/' },
+                  ]
+                },
+              ]
+            },
+            {
+              text: 'Goals',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Overview *', link: '/front-end/domains/planner/goals/' },
+                {
+                  text: 'Entities',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/goals/entities/' },
+                  ]
+                },
+                {
+                  text: 'Features',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/goals/features/' },
+                  ]
+                },
+                {
+                  text: 'Components',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/goals/components/' },
+                  ]
+                },
+              ]
+            },
+            {
+              text: 'Todos',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Overview *', link: '/front-end/domains/planner/todos/' },
+                {
+                  text: 'Entities',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/todos/entities/' },
+                  ]
+                },
+                {
+                  text: 'Features',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/todos/features/' },
+                  ]
+                },
+                {
+                  text: 'Components',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/todos/components/' },
+                  ]
+                },
+              ]
+            },
+            {
+              text: 'Routines',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Overview *', link: '/front-end/domains/planner/routines/' },
+                {
+                  text: 'Entities',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/routines/entities/' },
+                  ]
+                },
+                {
+                  text: 'Features',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/routines/features/' },
+                  ]
+                },
+                {
+                  text: 'Components',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Overview *', link: '/front-end/domains/planner/routines/components/' },
+                  ]
+                },
+              ]
+            },
+          ]
+        },
+        {
           text: 'Physical',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/domains/physical/' },
             {
               text: 'Fitness',
+              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Overview', link: '/front-end/domains/physical/fitness/' },
                 {
                   text: 'Entities',
+                  collapsible: true,
+                  collapsed: true,
                   items: [
                     { text: 'Overview *', link: '/front-end/domains/physical/fitness/entities/' },
                     { text: 'Mesocycle', link: '/front-end/domains/physical/fitness/entities/mesocycle' },
@@ -72,6 +218,8 @@ export default defineConfig({
                 },
                 {
                   text: 'Features',
+                  collapsible: true,
+                  collapsed: true,
                   items: [
                     { text: 'Overview *', link: '/front-end/domains/physical/fitness/features/' },
                     { text: 'Mesocycle', link: '/front-end/domains/physical/fitness/features/mesocycle' },
@@ -90,6 +238,8 @@ export default defineConfig({
                 },
                 {
                   text: 'Components',
+                  collapsible: true,
+                  collapsed: true,
                   items: [
                     { text: 'Overview *', link: '/front-end/domains/physical/fitness/components/' },
                   ]
@@ -100,30 +250,40 @@ export default defineConfig({
         },
         {
           text: 'Mental',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/domains/mental/' },
           ]
         },
         {
           text: 'Social',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/domains/social/' },
           ]
         },
         {
           text: 'Emotional & Spiritual',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/domains/emotional-spiritual/' },
           ]
         },
         {
           text: 'Financial',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/domains/financial/' },
           ]
         },
         {
           text: 'Components',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/front-end/components/' },
           ]
@@ -139,24 +299,32 @@ export default defineConfig({
         },
         {
           text: 'Architecture',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/back-end/architecture/' },
           ]
         },
         {
           text: 'Controllers',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/back-end/controllers/' },
           ]
         },
         {
           text: 'Services',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/back-end/services/' },
           ]
         },
         {
           text: 'Data Access',
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Overview *', link: '/back-end/data-access/' },
           ]
