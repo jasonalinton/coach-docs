@@ -250,6 +250,41 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Blurbs',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Overview', link: '/front-end/domains/blurbs/' },
+            {
+              text: 'Entities',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Overview *', link: '/front-end/domains/blurbs/entities/' },
+                { text: 'Blurb', link: '/front-end/domains/blurbs/entities/blurb' },
+              ]
+            },
+            {
+              text: 'Features',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Overview *', link: '/front-end/domains/blurbs/features/' },
+                { text: 'Timeline', link: '/front-end/domains/blurbs/features/timeline' },
+                { text: 'Blurb Form', link: '/front-end/domains/blurbs/features/blurb-form' },
+              ]
+            },
+            {
+              text: 'Components',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Overview *', link: '/front-end/domains/blurbs/components/' },
+              ]
+            },
+          ]
+        },
+        {
           text: 'Mental',
           collapsible: true,
           collapsed: true,
