@@ -21,7 +21,7 @@ Each Workout Exercise has a toolbar for quick in-workout actions:
 | **Rest** | Manually start or adjust the rest timer |
 | **Replace** | Swap for another exercise based on split type (push/pull, upper/lower, straight-arm/bent-arm, etc.) |
 | **Notes** | Add notes specific to this exercise in this workout |
-| **Units** | Toggle units (e.g. kg / lbs) |
+| **Edit** | Navigate to the exercise form to edit global exercise properties |
 | **More** | Access exercise-level settings (tempo, rest, circuit placement) |
 
 ## Exercise Settings
@@ -43,9 +43,23 @@ Tempo defines the speed and rhythm of each movement phase. Three tempo types are
 When a tempo is set, a **▶ play button** runs an animated countdown through each phase:
 
 - Each phase counts down to **0**, then the next starts immediately
+- The timer starts at the **exercise's configured tempo start phase** (defaults to Eccentric for 4-digit tempos)
 - The number of **loops** matches the **reps** of the active set (defaults to 1)
 - When all loops complete, the set is **automatically logged**
-- Stopping early cancels the countdown without logging
+- Stopping early cancels the countdown and resets without logging
+
+### Laterality & Rotations
+
+Tempo follows the exercise's **laterality** setting:
+
+| Laterality | Rotations per rep | Behavior |
+|---|---|---|
+| **Bilateral** | 1 | Loops directly through all reps, then logs |
+| **Unilateral** | 2 | Runs all reps for side 1, then **pauses** — user manually starts side 2 |
+
+When paused between rotations, the **Rotation X / Y** counter remains visible so the user knows which side is next. Pressing ▶ resumes from the next rotation without resetting the rep count.
+
+The rep counter (**X / totalReps**) and rotation counter (**Rotation X / Y**) are displayed during playback and while paused.
 
 ## Rest Timer
 
@@ -144,6 +158,13 @@ The Workout Exercise maps to the `WorkoutSection_Exercise` record:
 | `tempo_bpm` | BPM tempo value |
 | `restSeconds` | Rest duration in seconds between sets |
 | `Set[]` | The sets logged or planned for this exercise instance |
+
+The tempo timer is also influenced by two fields on the base **Exercise** record:
+
+| Field | Description |
+|---|---|
+| `idTempoStart` | Which phase the 4-digit timer starts on (Eccentric, Concentric, Top Iso, Bottom Iso) |
+| `idLaterality` | Bilateral (1 rotation) or Unilateral (2 rotations per rep, with pause between) |
 
 → Full entity details: [Workout Section Entity](/front-end/domains/physical/fitness/entities/workout-sections)
 → Set entity details: [Set Entity](/front-end/domains/physical/fitness/entities/sets)
