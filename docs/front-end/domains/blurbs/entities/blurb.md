@@ -40,17 +40,26 @@ The sequencing model (parent/child vs previous/next ID chain) has not been final
 
 ## Mappings
 
-A blurb can be linked to many different entities:
+A blurb can be attached to one or more entities at once — a single note can be relevant to an Exercise *and* a Goal *and* a LogEntry simultaneously, rather than being limited to a single attachment:
 
 | Mapping | Description |
 |---|---|
+| **Metric** | Notes tied to a metric data point |
 | **Goal** | Why you set this goal (Reason) or why you didn't follow through (Excuse) |
 | **Todo** | Notes or reflections tied to a specific todo |
 | **Iteration** | Tied to a specific logged instance of a todo |
 | **LogEntry** | Attached to a log entry |
 | **Workout** | Pre/post-workout notes, briefings |
+| **Exercise** | Notes about a specific exercise (e.g. form cues, PR context) |
 | **FoodItem** | Notes about a food item |
 | **Meal** | Notes about a meal |
+| **FitnessGoal** | Notes tied to a fitness goal |
+| **GoalTimePair / GoalTimePairTodo** | Notes tied to a scheduled window on a goal, or a todo scheduled within one |
+| **TodoRepeat / TodoTimePair** | Notes tied to a todo's recurrence or scheduled window |
+
+## Type Tags
+
+Independent of a blurb's primary [type](#blurb-types), a blurb can also carry one or more lightweight category tags pulled from the same shared type list used across the app. This lets a blurb be labeled (e.g. as both "Advice" and "Note") without changing its primary type or what it's mapped to.
 
 ## Media
 
@@ -63,11 +72,19 @@ Blurb
 ├── User (owner)
 ├── Blurb (parent, optional)
 ├── Blurb (previous, optional)
-├── Goal (optional mapping)
-├── Todo (optional mapping)
-├── Iteration (optional mapping)
-├── Workout (optional mapping)
-├── Meal / FoodItem (optional mapping)
+├── Type tags (0 or more)
+├── Mappings (0 or more, any combination of)
+│   ├── Metric
+│   ├── Goal
+│   ├── Todo
+│   ├── Iteration
+│   ├── LogEntry
+│   ├── Workout
+│   ├── Exercise
+│   ├── FoodItem / Meal
+│   ├── FitnessGoal
+│   ├── GoalTimePair / GoalTimePairTodo
+│   └── TodoRepeat / TodoTimePair
 └── Media (0 or more)
 ```
 

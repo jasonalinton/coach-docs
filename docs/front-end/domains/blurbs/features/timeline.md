@@ -24,7 +24,8 @@ The timeline is organized by week or day, with banner images or section headers 
 The toolbar includes filter controls to narrow what's shown:
 
 - **By type** — show only Journal entries, only Reasons, only Excuses, etc.
-- **By mapping** — show only blurbs attached to a specific goal, workout, or todo
+- **By type tag** — show only blurbs carrying a specific category tag
+- **By mapping** — show only blurbs attached to a specific goal, workout, todo, exercise, etc. Since a blurb can carry several mappings at once, it can match more than one mapping filter
 - **By date range** — narrow to a specific period
 
 ## Sort Toolbar

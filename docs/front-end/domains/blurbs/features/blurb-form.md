@@ -13,9 +13,14 @@ The Blurb Form is used to create and edit blurbs. It can be opened standalone or
 |---|---|---|
 | **DateTime** | Yes | When the blurb occurred — defaults to now, but can be changed |
 | **Type** | No | Blurb type (Reason, Excuse, Journal, etc.) — optional, can be left unset |
-| **Mapping** | No | What entity this blurb is attached to (Goal, Todo, Workout, etc.) |
+| **Mappings** | No | What this blurb is attached to — one or more entities (Goal, Todo, Workout, Exercise, etc.), not just a single one |
+| **Type Tags** | No | Additional category tags on the blurb, independent of its primary Type |
 | **Title** | No | Optional title for the blurb |
 | **Text** | No | The body of the blurb — can be left empty if the blurb is media-only |
+
+::: info Planned
+The backend supports attaching a single blurb to multiple entities in one save (e.g. a note that's about both an Exercise and a Goal at once). Whether the form UI exposes multi-select for **Mappings** yet, or still behaves as a single-mapping picker, needs to be confirmed against the current front-end implementation.
+:::
 
 ## Display vs Edit Modes
 
